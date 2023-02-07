@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>guess</title>
+	<meta charset='utf-8'>
+	<meta name='Viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.6'>
+	<meta name='Title' content='guess'>
+	<meta name='Subject' content='guess 클론 코딩'>
+	<meta name='Keywords' content='html5, css3, 웹표준, 관공소, guess '>
+	<meta name='Author' content='jioh'>
+	<meta name='Publisher' content='jioh'>
+	<meta name='Description' content='웹접근성, 웹표준을 준수한 guess 클론 코딩입니다.'>
+	<meta name='Author-Date' content='2022/12/21'>
+	<meta name='Robots' content='index,follow'>
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel='stylesheet' href='./css/reset.css'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+	<link rel='stylesheet' href='./css/guess.css'>
+	<link rel='stylesheet' href='./css/reponsive.css'>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>    
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header_wrap clear">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="./guess_img/h1_logo.png" alt="GUESS logo">
+                    </a>
+                </h1>
+                <nav id="gnb">
+                    <ul class="gnb_menu">
+                        <li><a href="#">WOMEN</a>
+                            <div class="bg_sub"></div>
+                            <div class="sub_container">
+                                <div class="sub_menu_wrap">
+                                    <ul class="sub_menu">
+                                        <li><a href="#">OUTERWEAR</a></li>
+                                        <li><a href="#">T-SHIRT</a></li>
+                                        <li><a href="#">SHIRTS/SWEATER</a></li>
+                                        <li><a href="#">DRESS/SKIRT</a></li>
+                                        <li><a href="#">PANTS/SHORTS</a></li>
+                                        <li><a href="#">DENIM</a></li>
+                                        <li><a href="#">ACC</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">MEN</a>
+                            <div class="bg_sub"></div>
+                            <div class="sub_container">
+                                <div class="sub_menu_wrap">
+                                    <ul class="sub_menu">
+                                        <li><a href="#">OUTERWEAR</a></li>
+                                        <li><a href="#">T-SHIRT</a></li>
+                                        <li><a href="#">SHIRTS/SWEATER</a></li>
+                                        <li><a href="#">PANTS/SHORTS</a></li>
+                                        <li><a href="#">DENIM</a></li>
+                                        <li><a href="#">ACC</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">COLLECTIONS</a>
+                            <div class="bg_sub"></div>
+                            <div class="sub_container">
+                                <div class="sub_menu_wrap">
+                                    <ul class="sub_menu">
+                                        <li><a href="#">22'FW SUZY</a></li>
+                                        <li><a href="#">GO X BATMAN</a></li>
+                                        <li><a href="#">22'GUESS ORIGINALS</a></li>
+                                        <li><a href="#">22'FW POP</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">DENIM</a>
+                            <div class="bg_sub"></div>
+                            <div class="sub_container left">
+                                <div class="sub_menu_wrap">
+                                    <h3 class="tit">WOMEN</h3>
+                                    <ul class="sub_menu">
+                                        <li><a href="#">STRAIGHT</a></li>
+                                        <li><a href="#">BOOTCUT</a></li>
+                                        <li><a href="#">BOYFRIEND</a></li>
+                                        <li><a href="#">WIDE</a></li>
+                                        <li><a href="#">MOM</a></li>
+                                        <li><a href="#">SKINNY</a></li>
+                                        <li><a href="#">SHORTS</a></li>
+                                        <li><a href="#">SKIRT</a></li>
+                                        <li><a href="#">DRESS</a></li>
+                                        <li><a href="#">JUMPSUIT</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sub_menu_wrap">
+                                    <h3 class="tit left">MEN</h3>
+                                    <ul class="sub_menu left_menu">
+                                        <li><a href="#">STRAIGHT</a></li>
+                                        <li><a href="#">TAPER</a></li>
+                                        <li><a href="#">NEW FIT</a></li>
+                                        <li><a href="#">SKINNY</a></li>
+                                        <li><a href="#">SHORTS</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">BAG</a>
+                            <div class="bg_sub"></div>
+                            <div class="sub_container">
+                                <div class="sub_menu_wrap">
+                                    <ul class="sub_menu">
+                                        <li><a href="#">MEN'S BAG</a></li>
+                                        <li><a href="#">HANDBAG</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="with_bar none_block"><a href="#">PROMOTION</a></li>
+                        <li class="none_block"><a href="#">EVENT</a></li>
+                        <li class="none_block"><a href="#" class="chcolor">DENIM FIT</a></li>
+                    </ul>
+                </nav>
+                <ul class="util_menu">
+                    <li><a href="#" class="btn_sch_open"><i class="icon_sch">검색</i></a></li>
+                    <li class="has_sub">
+                        <a href="#"><i class="icon-mymenu">마이메뉴</i></a>
+                        <div class="sub_container">
+                            <ul class="my_menu">
+                                <li><a href="#">로그인</a></li>
+                                <li><a href="#">회원가입</a></li>
+                                <li><a href="#">마이페이지</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div id="mobile">
+                    <div class="mobile_menu">
+                        <i class="fas fa-bars"></i>
+                        <nav class="mobile_nav">
+                            <ul>
+                                <li><a href="#">WOMEN</a></li>
+                                <li><a href="#">MEN</a></li>
+                                <li><a href="#">COLLECTIONS</a></li>
+                                <li><a href="#">DENIM</a></li>
+                                <li><a href="#">BAG</a></li>
+                                <li><a href="#">PROMOTION</a></li>
+                                <li><a href="#">EVENT</a></li>
+                                <li><a href="#">DENIM FIT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="curation">
+                <div class="menu">
+                    <button type="button" class="btn" title="쇼핑백">
+                        <span class="v-hidden">쇼핑백</span>
+                        <span class="icon-curation-cart">0</span>
+                    </button>
+                    <button type="button" class="btn" title="TODAY HISTORY & MY LIKE ITEMS">
+                        <span class="icon-curation-like ">TODAY HISTORY & MY LIKE ITEMS</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <header id="header" class="is_scroll">
+            <div class="header_wrap clear">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="./guess_img/h1_logo.png" alt="GUESS logo">
+                    </a>
+                </h1>
+                <nav id="gnb">
+                    <ul class="gnb_menu">
+                        <li><a href="#">WOMEN</a>
+                            <div class="bg_sub"></div>
+                            <div class="sub_container">
+                                <div class="sub_menu_wrap">
+                                    <ul class="sub_menu">
+                                        <li><a href="#">OUTERWEAR</a></li>
+                                        <li><a href="#">T-SHIRT</a></li>
+                                        <li><a href="#">SHIRTS/SWEATER</a></li>
+                                        <li><a href="#">DRESS/SKIRT</a></li>
+                                        <li><a href="#">PANTS/SHORTS</a></li>
+                                        <li><a href="#">DENIM</a></li>
+                                        <li><a href="#">ACC</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">MEN</a>
+                            <div class="bg_sub"></div>
+                            <div class="sub_container">
+                                <div class="sub_menu_wrap">
+                                    <ul class="sub_menu">
+                                        <li><a href="#">OUTERWEAR</a></li>
+                                        <li><a href="#">T-SHIRT</a></li>
+                                        <li><a href="#">SHIRTS/SWEATER</a></li>
+                                        <li><a href="#">PANTS/SHORTS</a></li>
+                                        <li><a href="#">DENIM</a></li>
+                                        <li><a href="#">ACC</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">COLLECTIONS</a>
+                            <div class="bg_sub"></div>
+                            <div class="sub_container">
+                                <div class="sub_menu_wrap">
+                                    <ul class="sub_menu">
+                                        <li><a href="#">22'FW SUZY</a></li>
+                                        <li><a href="#">GO X BATMAN</a></li>
+                                        <li><a href="#">22'GUESS ORIGINALS</a></li>
+                                        <li><a href="#">22'FW POP</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">DENIM</a>
+                            <div class="bg_sub"></div>
+                            <div class="sub_container left">
+                                <div class="sub_menu_wrap">
+                                    <h3 class="tit">WOMEN</h3>
+                                    <ul class="sub_menu">
+                                        <li><a href="#">STRAIGHT</a></li>
+                                        <li><a href="#">BOOTCUT</a></li>
+                                        <li><a href="#">BOYFRIEND</a></li>
+                                        <li><a href="#">WIDE</a></li>
+                                        <li><a href="#">MOM</a></li>
+                                        <li><a href="#">SKINNY</a></li>
+                                        <li><a href="#">SHORTS</a></li>
+                                        <li><a href="#">SKIRT</a></li>
+                                        <li><a href="#">DRESS</a></li>
+                                        <li><a href="#">JUMPSUIT</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sub_menu_wrap">
+                                    <h3 class="tit left">MEN</h3>
+                                    <ul class="sub_menu left_menu">
+                                        <li><a href="#">STRAIGHT</a></li>
+                                        <li><a href="#">TAPER</a></li>
+                                        <li><a href="#">NEW FIT</a></li>
+                                        <li><a href="#">SKINNY</a></li>
+                                        <li><a href="#">SHORTS</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">BAG</a>
+                            <div class="bg_sub"></div>
+                            <div class="sub_container">
+                                <div class="sub_menu_wrap">
+                                    <ul class="sub_menu">
+                                        <li><a href="#">MEN'S BAG</a></li>
+                                        <li><a href="#">HANDBAG</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="with_bar none_block"><a href="#">PROMOTION</a></li>
+                        <li class="none_block"><a href="#">EVENT</a></li>
+                        <li class="none_block"><a href="#" class="chcolor">DENIM FIT</a></li>
+                    </ul>
+                </nav>
+                <ul class="util_menu">
+                    <li><a href="#" class="btn_sch_open"><i class="icon_sch">검색</i></a></li>
+                    <li class="has_sub">
+                        <a href="#"><i class="icon-mymenu">마이메뉴</i></a>
+                        <div class="sub_container">
+                            <ul class="my_menu">
+                                <li><a href="#">로그인</a></li>
+                                <li><a href="#">회원가입</a></li>
+                                <li><a href="#">마이페이지</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div id="mobile">
+                    <div class="mobile_menu">
+                        <i class="fas fa-bars"></i>
+                        <nav class="mobile_nav">
+                            <ul>
+                                <li><a href="#">WOMEN</a></li>
+                                <li><a href="#">MEN</a></li>
+                                <li><a href="#">COLLECTIONS</a></li>
+                                <li><a href="#">DENIM</a></li>
+                                <li><a href="#">BAG</a></li>
+                                <li><a href="#">PROMOTION</a></li>
+                                <li><a href="#">EVENT</a></li>
+                                <li><a href="#">DENIM FIT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="curation">
+                <div class="menu">
+                    <button type="button" class="btn" title="쇼핑백">
+                        <span class="v-hidden">쇼핑백</span>
+                        <span class="icon-curation-cart">0</span>
+                    </button>
+                    <button type="button" class="btn" title="TODAY HISTORY & MY LIKE ITEMS">
+                        <span class="icon-curation-like ">TODAY HISTORY & MY LIKE ITEMS</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div id="content">
+            <main class="main_wrp">
+                <div class="visual">
+                    <div class="slider">
+                        <a href="javascript:" class="slick-prev slick-arrow">이전</a>
+                        <div class="mySwiper">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide"><img src="./guess_img/main1.jpg" alt=""></li>
+                                <li class="swiper-slide"><img src="./guess_img/main2.jpg" alt=""></li>
+                                <li class="swiper-slide"><img src="./guess_img/main3.jpg" alt=""></li>
+                                <li class="swiper-slide"><img src="./guess_img/main4.jpg" alt=""></li>
+                                <li class="swiper-slide"><img src="./guess_img/main5.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:" class="slick-next slick-arrow">다음</a>
+                    </div>
+                    <div class="view_more">view more</div>
+                </div>
+                <div class="new_arrivals_area">
+                    <h2 class="main_title">NEW ARRIVALS</h2>
+                    <div class="responsive_slider">
+                        <div class="main_top_slider">
+                            <a href="javascript:" class="slide-prev slick-arrow">이전</a>
+                            <div class="slide">
+                                <div class="slider-div">
+                                    <div class="item slick-slide">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <div class="image">
+                                                    <img class="already" src="./guess_img/1.jpg" alt="SKIRT">
+                                                    <img class="ready" src="./guess_img/1-1.jpg" alt="SKIRT">
+                                                    <div class="size-box">
+                                                        <div class="color-chip">
+                                                            <span style="background-color: #e573ae"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="thumbnail-info transition-normal">
+                                                    <div class="title">여성 코듀로이 스커트</div>
+                                                    <div class="price clear">
+                                                        <div class="pull-left">
+                                                            <del>148,000</del>
+                                                            <strong>103,600</strong>
+                                                            <span class="discount">30%</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="icons"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item slick-slide item-active">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <div class="image">
+                                                    <img class="already" src="./guess_img/2.jpg" alt="PADDING">
+                                                    <img class="ready" src="./guess_img/2-2.jpg" alt="PADDING">
+                                                    <div class="size-box">
+                                                        <div class="color-chip">
+                                                            <span style="background-color:#000000"></span>
+                                                            <span style="background-color:#f3df9e"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="thumbnail-info transition-normal">
+                                                    <div class="title">여성 다이아 롱 다운</div>
+                                                    <div class="price clear">
+                                                        <div class="pull-left">
+                                                            <del>398,000</del>
+                                                            <strong>278,600</strong>
+                                                            <span class="discount">30%</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="icons"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item slick-slide">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <div class="image">
+                                                    <img class="already" src="./guess_img/3.jpg" alt="PANTS">
+                                                    <img class="ready" src="./guess_img/3-3.jpg" alt="PANTS">
+                                                    <div class="size-box">
+                                                        <div class="color-chip">
+                                                            <span style="background-color: #e28ce4"></span>
+                                                            <span style="background-color: #fdfbdc"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="thumbnail-info transition-normal">
+                                                    <div class="title">여성 와이드 코듀로이</div>
+                                                    <div class="price clear">
+                                                        <div class="pull-left">
+                                                            <del>168,000</del>
+                                                            <strong>117,600</strong>
+                                                            <span class="discount">30%</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="icons"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item slick-slide">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <div class="image">
+                                                    <img class="already" src="./guess_img/4.jpg" alt="CARDIGAN">
+                                                    <img class="ready" src="./guess_img/4-4.jpg" alt="CARDIGAN">
+                                                    <div class="size-box">
+                                                        <div class="color-chip">
+                                                            <span style="background-color:#000"></span>
+                                                            <span style="background-color:#e573ae"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="thumbnail-info transition-normal">
+                                                    <div class="title">여성 하운즈투스 스웨터 가디건(YM3S1672 SET상품)</div>
+                                                    <div class="price clear">
+                                                        <div class="pull-left">
+                                                            <del>148,000</del>
+                                                            <strong>103,600</strong>
+                                                            <span class="discount">30%</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="icons"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item slick-slide item-active">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <div class="image">
+                                                    <img class="already" src="./guess_img/5.jpg" alt="KNIT">
+                                                    <img class="ready" src="./guess_img/5-5.jpg" alt="KNIT">
+                                                    <div class="size-box">
+                                                        <div class="color-chip">
+                                                            <span style="background-color: #fdfbdc"></span>
+                                                            <span style="background-color: #011c70"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="thumbnail-info transition-normal">
+                                                    <div class="title">여성 V넥 스웨터 풀오버</div>
+                                                    <div class="price clear">
+                                                        <div class="pull-left">
+                                                            <del>78,000</del>
+                                                            <strong>54,600</strong>
+                                                            <span class="discount">30%</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="icons">
+                                                        <img src="./guess_img/icon-temporary-20180601150648.gif" alt="일시품절">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item slick-slide">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <div class="image">
+                                                    <img class="already" src="./guess_img/6.jpg" alt="PADDING">
+                                                    <img class="ready" src="./guess_img/6-6.jpg" alt="PADDING">
+                                                    <div class="size-box">
+                                                        <div class="color-chip">
+                                                            <span style="background-color:#e28ce4"></span>
+                                                            <span style="background-color:#000"></span>
+                                                            <span style="background-color:#fdfbdc"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="thumbnail-info transition-normal">
+                                                    <div class="title">여성 와이드 립 카라 숏 다운</div>
+                                                    <div class="price clear">
+                                                        <div class="pull-left">
+                                                            <del>298,000</del>
+                                                            <strong>268,200</strong>
+                                                            <span class="discount">10%</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="icons">
+                                                        <img src="./guess_img/icon-temporary-20180601150648.gif" alt="일시품절">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item slick-slide">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <div class="image">
+                                                    <img class="already" src="./guess_img/7.jpg" alt="HAT">
+                                                    <img class="ready" src="./guess_img/7-7.jpg" alt="HAT">
+                                                    <div class="size-box">
+                                                        <div class="color-chip">
+                                                            <span style="background-color:#e9d38d"></span>
+                                                            <span style="background-color:#011c70"></span>
+                                                            <span style="background-color:#000"></span>
+                                                            <span style="background-color:#ff0518"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="thumbnail-info transition-normal">
+                                                    <div class="title">남녀공용 리버서블 뽀글이 고소모</div>
+                                                    <div class="price clear">
+                                                        <div class="pull-left">
+                                                            <del>78,000</del>
+                                                            <strong>54,600</strong>
+                                                            <span class="discount">30%</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="icons">
+                                                        <img src="./guess_img/icon-temporary-20180601150648.gif" alt="일시품절">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item slick-slide">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <div class="image">
+                                                    <img class="already" src="./guess_img/8.jpg" alt="KNIT-VEST">
+                                                    <img class="ready" src="./guess_img/8-8.jpg" alt="KNIT-VEST">
+                                                    <div class="size-box">
+                                                        <div class="color-chip">
+                                                            <span style="background-color: #000"></span>
+                                                            <span style="background-color: #e573ae"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="thumbnail-info transition-normal">
+                                                    <div class="title">여성 하운즈투스 스웨터 탑(YM4S2672 SET상품)</div>
+                                                    <div class="price clear">
+                                                        <div class="pull-left">
+                                                            <del>68,000</del>
+                                                            <strong>47,600</strong>
+                                                            <span class="discount">30%</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="icons">
+                                                        <img src="./guess_img/icon-temporary-20180601150648.gif" alt="일시품절">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item slick-slide">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <div class="image">
+                                                    <img class="already" src="./guess_img/9.jpg" alt="PADDING">
+                                                    <img class="ready" src="./guess_img/9-9.jpg" alt="PADDING">
+                                                    <div class="size-box">
+                                                        <div class="color-chip">
+                                                            <span style="background-color: #c2c2c2"></span>
+                                                            <span style="background-color: #000"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="thumbnail-info transition-normal">
+                                                    <div class="title">남성 스텐넥 클린 롱다운점퍼</div>
+                                                    <div class="price clear">
+                                                        <div class="pull-left">
+                                                            <del>358,000</del>
+                                                            <strong>250,600</strong>
+                                                            <span class="discount">30%</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="icons"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item slick-slide">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <div class="image">
+                                                    <img class="already" src="./guess_img/10.jpg" alt="PADDING">
+                                                    <img class="ready" src="./guess_img/10-1.jpg" alt="PADDING">
+                                                    <div class="size-box">
+                                                        <div class="color-chip">
+                                                            <span style="background-color: #000"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="thumbnail-info transition-normal">
+                                                    <div class="title">여성 에코레더 숏 푸퍼 다운</div>
+                                                    <div class="price clear">
+                                                        <div class="pull-left">
+                                                            <del>238,000</del>
+                                                            <strong>166,600</strong>
+                                                            <span class="discount">30%</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="icons">
+                                                        <img src="./guess_img/icon-temporary-20180601150648.gif" alt="일시품절">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item slick-slide">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <div class="image">
+                                                    <img class="already" src="./guess_img/11.jpg" alt="CARDIGAN">
+                                                    <img class="ready" src="./guess_img/11-1.jpg" alt="CARDIGAN">
+                                                    <div class="size-box">
+                                                        <div class="color-chip">
+                                                            <span style="background-color: #000"></span>
+                                                            <span style="background-color: #bfc1aa"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="thumbnail-info transition-normal">
+                                                    <div class="title">여성 날개사 스웨터 가디건</div>
+                                                    <div class="price clear">
+                                                        <div class="pull-left">
+                                                            <del>168,000</del>
+                                                            <strong>117,600</strong>
+                                                            <span class="discount">30%</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="icons"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item slick-slide">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <div class="image">
+                                                    <img class="already" src="./guess_img/12.jpg" alt="FLEECE-JACKET">
+                                                    <img class="ready" src="./guess_img/12-1.jpg" alt="FLEECE-JACKET">
+                                                    <div class="size-box">
+                                                        <div class="color-chip">
+                                                            <span style="background-color: #0550fd"></span>
+                                                            <span style="background-color: #000"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="thumbnail-info transition-normal">
+                                                    <div class="title">남성 체크 뽀글이 다운 점퍼</div>
+                                                    <div class="price clear">
+                                                        <div class="pull-left">
+                                                            <del>248,000</del>
+                                                            <strong>173,600</strong>
+                                                            <span class="discount">30%</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="icons"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="javascript:" class="slide-next slick-arrow">다음</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="line_banner">
+                    <div class="banner_img trans-x">
+                        <a href="javascript:"></a>
+                    </div>
+                </div>
+                <div class="promotion">
+                    <div class="inner_align">
+                        <ul class="list col2">
+                            <li>
+                                <div class="item">
+                                    <a href="#">
+                                        <div class="img"><img src="./guess_img/promotion.jpg" alt="promotion1"></div>
+                                        <div class="txt">
+                                            <p class="subject block-vm">
+                                                <span class="block-vm-inner">GUESS ORIGINALS X BETTY BOOP</span>
+                                            </p>
+                                            <p class="exp"></p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <a href="#">
+                                        <div class="img"><img src="./guess_img/promotion1.jpg" alt="promotion2"></div>
+                                        <div class="txt">
+                                            <p class="subject block-vm">
+                                                <span class="block-vm-inner">GUESS WARM TOUCH DENIM</span>
+                                            </p>
+                                            <p class="exp"></p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="best_selling_area">
+                    <div class="inner_align">
+                        <h2 class="main_title">BEST SELLERS</h2>
+                        <ul class="goods-list is-five">
+                            <li class="first margin">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="./guess_img/13.jpg" alt="PADDING" class="already">
+                                            <img src="./guess_img/13-1.jpg" alt="PADDING" class="ready">
+                                            <div class="size-box">
+                                                <div class="color-chip">
+                                                    <span style="background-color:#e5f1e7"></span>
+                                                    <span style="background-color:#000000"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail-info transition-normal">
+                                            <div class="title">여성 바디컨시어스 롱기장 구스(LMT 30%할인)</div>
+                                            <div class="price clear">
+                                                <div class="pull-left">
+                                                    <del>398,000</del>
+                                                    <strong>278,600</strong>
+                                                    <span class="discount">30%</span>
+                                                </div>
+                                            </div>
+                                            <div class="icons"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="margin">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="./guess_img/14.jpg" alt="PADDING" class="already">
+                                            <img src="./guess_img/14-1.jpg" alt="PADDING" class="ready">
+                                            <div class="size-box">
+                                                <div class="color-chip">
+                                                    <span style="background-color:#fdfbdc"></span>
+                                                    <span style="background-color:#000000"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail-info transition-normal">
+                                            <div class="title">여성 바디컨시어스 벨티드 숏 구스</div>
+                                            <div class="price clear">
+                                                <div class="pull-left">
+                                                    <del>278,000</del>
+                                                    <strong>250,200</strong>
+                                                    <span class="discount">10%</span>
+                                                </div>
+                                            </div>
+                                            <div class="icons">
+                                                <img src="./guess_img/icon-temporary-20180601150648.gif" alt="일시품절">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="margin">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="./guess_img/15.jpg" alt="CARDIGAN" class="already">
+                                            <img src="./guess_img/15-1.jpg" alt="CARDIGAN" class="ready">
+                                            <div class="size-box">
+                                                <div class="color-chip">
+                                                    <span style="background-color:#7d7d7d"></span>
+                                                    <span style="background-color:#011c70"></span>
+                                                    <span style="background-color:#fdfbdc"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail-info transition-normal">
+                                            <div class="title">여성 크랍 스웨터 가디건</div>
+                                            <div class="price clear">
+                                                <div class="pull-left">
+                                                    <del>138,000</del>
+                                                    <strong>124,200</strong>
+                                                    <span class="discount">10%</span>
+                                                </div>
+                                            </div>
+                                            <div class="icons"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="margin margin_second margin_second_top">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="./guess_img/16.jpg" alt="PADDING" class="already">
+                                            <img src="./guess_img/16-1.jpg" alt="PADDING" class="ready">
+                                            <div class="size-box">
+                                                <div class="color-chip">
+                                                    <span style="background-color:#efe29d"></span>
+                                                    <span style="background-color:#c2c2c2"></span>
+                                                    <span style="background-color:#000000"></span>
+                                                    <span style="background-color:#517a55"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail-info transition-normal">
+                                            <div class="title">남녀공용 베이직 푸퍼 다운</div>
+                                            <div class="price clear">
+                                                <div class="pull-left">
+                                                    <del>108,000</del>
+                                                    <strong>97,200</strong>
+                                                    <span class="discount">10%</span>
+                                                </div>
+                                            </div>
+                                            <div class="icons">
+                                                <img src="./guess_img/icon-temporary-20180601150648.gif" alt="일시품절">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="margin margin_first margin_second_left">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="./guess_img/17.jpg" alt="CARDIGAN" class="already">
+                                            <img src="./guess_img/17-1.jpg" alt="CARDIGAN" class="ready">
+                                            <div class="size-box">
+                                                <div class="color-chip">
+                                                    <span style="background-color:#000000"></span>
+                                                    <span style="background-color:#f3df9e"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail-info transition-normal">
+                                            <div class="title">여성 에코퍼 카라 스웨터 가디건(YM3S1671셋업 가능 상품)</div>
+                                            <div class="price clear">
+                                                <div class="pull-left">
+                                                    <del>198,000</del>
+                                                    <strong>138,600</strong>
+                                                    <span class="discount">30%</span>
+                                                </div>
+                                            </div>
+                                            <div class="icons"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="first margin_left">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="./guess_img/18.jpg" alt="CARDIGAN" class="already">
+                                            <img src="./guess_img/18-1.jpg" alt="CARDIGAN" class="ready">
+                                            <div class="size-box">
+                                                <div class="color-chip">
+                                                    <span style="background-color:#fdfbdc"></span>
+                                                    <span style="background-color:#000000"></span>
+                                                    <span style="background-color:#444548"></span>
+                                                    <span style="background-color:#c70404"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail-info transition-normal">
+                                            <div class="title">여성 골지 스웨터 가디건</div>
+                                            <div class="price clear">
+                                                <div class="pull-left">
+                                                    <del>98,000</del>
+                                                    <strong>68,600</strong>
+                                                    <span class="discount">30%</span>
+                                                </div>
+                                            </div>
+                                            <div class="icons"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="margin_second">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="./guess_img/19.jpg" alt="JIP-UP" class="already">
+                                            <img src="./guess_img/19-1.jpg" alt="JIP-UP" class="ready">
+                                            <div class="size-box">
+                                                <div class="color-chip">
+                                                    <span style="background-color:#FAAFBA"></span>
+                                                    <span style="background-color:#c2c2c2"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail-info transition-normal">
+                                            <div class="title">여성 케이블 스웨터 집업</div>
+                                            <div class="price clear">
+                                                <div class="pull-left">
+                                                    <del>158,000</del>
+                                                    <strong>142,200</strong>
+                                                    <span class="discount">10%</span>
+                                                </div>
+                                            </div>
+                                            <div class="icons"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="./guess_img/20.jpg" alt="PADDING" class="already">
+                                            <img src="./guess_img/20-1.jpg" alt="PADDING" class="ready">
+                                            <div class="size-box">
+                                                <div class="color-chip">
+                                                    <span style="background-color:#000000"></span>
+                                                    <span style="background-color:#c2c2c2"></span>
+                                                    <span style="background-color:#bfc1aa"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail-info transition-normal">
+                                            <div class="title">남녀공용 인퀼팅 후드 구스 다운</div>
+                                            <div class="price clear">
+                                                <div class="pull-left">
+                                                    <del>238,000</del>
+                                                    <strong>169,000</strong>
+                                                    <span class="discount">28%</span>
+                                                </div>
+                                            </div>
+                                            <div class="icons"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class=" left_margin margin_second_left">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="./guess_img/21.jpg" alt="KNIT-VEST" class="already">
+                                            <img src="./guess_img/21-1.jpg" alt="KNIT-VEST" class="ready">
+                                            <div class="size-box">
+                                                <div class="color-chip">
+                                                    <span style="background-color:#fdfbdc"></span>
+                                                    <span style="background-color:#011c70"></span>
+                                                    <span style="background-color:#FAAFBA"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail-info transition-normal">
+                                            <div class="title">남녀공용 V넥 스웨터 베스트</div>
+                                            <div class="price clear">
+                                                <div class="pull-left">
+                                                    <del>78,000</del>
+                                                    <strong>70,200</strong>
+                                                    <span class="discount">10%</span>
+                                                </div>
+                                            </div>
+                                            <div class="icons"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class=" margin_second">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="./guess_img/22.jpg" alt="JACKET" class="already">
+                                            <img src="./guess_img/22-1.jpg" alt="JACKET" class="ready">
+                                            <div class="size-box">
+                                                <div class="color-chip">
+                                                    <span style="background-color:#000000"></span>
+                                                    <span style="background-color:#ffef00"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail-info transition-normal">
+                                            <div class="title">여성 트위드 자켓</div>
+                                            <div class="price clear">
+                                                <div class="pull-left">
+                                                    <del>328,000</del>
+                                                    <strong>295,200</strong>
+                                                    <span class="discount">10%</span>
+                                                </div>
+                                            </div>
+                                            <div class="icons"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class=" first  margin_left none">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="./guess_img/23.jpg" alt="PADDING" class="already">
+                                            <img src="./guess_img/23-1.jpg" alt="PADDING" class="ready">
+                                            <div class="size-box">
+                                                <div class="color-chip">
+                                                    <span style="background-color:#f3df9e"></span>
+                                                    <span style="background-color:#e28ce4"></span>
+                                                    <span style="background-color:#000000"></span>
+                                                    <span style="background-color:#e9d38d"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail-info transition-normal">
+                                            <div class="title">남녀공용 심리스 구스 푸퍼 다운</div>
+                                            <div class="price clear">
+                                                <div class="pull-left">
+                                                    <del>178,000</del>
+                                                    <strong>129,000</strong>
+                                                    <span class="discount">27%</span>
+                                                </div>
+                                            </div>
+                                            <div class="icons"><img src="./guess_img/icon-temporary-20180601150648.gif" alt="일시품절"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="none none">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="./guess_img/24.jpg" alt="PANTS" class="already">
+                                            <img src="./guess_img/24-1.jpg" alt="PANTS" class="ready">
+                                            <div class="size-box">
+                                                <div class="color-chip">
+                                                    <span style="background-color:#5677A6"></span>
+                                                    <span style="background-color:#414F6B"></span>
+                                                    <span style="background-color:#FFFFFF"></span>
+                                                    <span style="background-color:#000000"></span>
+                                                    <span style="background-color:#2D2C4D"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail-info transition-normal">
+                                            <div class="title">여성 와이드핏</div>
+                                            <div class="price clear">
+                                                <div class="pull-left">
+                                                    <del>168,000</del>
+                                                    <strong>151,200</strong>
+                                                    <span class="discount">10%</span>
+                                                </div>
+                                            </div>
+                                            <div class="icons"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="left_margin none">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="./guess_img/25.jpg" alt="PANTS" class="already">
+                                            <img src="./guess_img/25-1.jpg" alt="PANTS" class="ready">
+                                            <div class="size-box">
+                                                <div class="color-chip">
+                                                    <span style="background-color:#414F6B"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail-info transition-normal">
+                                            <div class="title">여성 앞포켓변형 D톤 와이드</div>
+                                            <div class="price clear">
+                                                <div class="pull-left">
+                                                    <del>218,000</del>
+                                                    <strong>196,200</strong>
+                                                    <span class="discount">10%</span>
+                                                </div>
+                                            </div>
+                                            <div class="icons"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="none">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="./guess_img/26.jpg" alt="T-SHIRT" class="already">
+                                            <img src="./guess_img/26-1.jpg" alt="T-SHIRT" class="ready">
+                                            <div class="size-box">
+                                                <div class="color-chip">
+                                                    <span style="background-color:#FFFFFF"></span>
+                                                    <span style="background-color:#e9d38d"></span>
+                                                    <span style="background-color:#000000"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail-info transition-normal">
+                                            <div class="title">여성 골지 자수 긴팔티</div>
+                                            <div class="price clear">
+                                                <div class="pull-left">
+                                                    <del>58,000</del>
+                                                    <strong>40,600</strong>
+                                                    <span class="discount">30%</span>
+                                                </div>
+                                            </div>
+                                            <div class="icons"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="none">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="./guess_img/27.jpg" alt="MAN-TO-MAN" class="already">
+                                            <img src="./guess_img/27-1.jpg" alt="MAN-TO-MAN" class="ready">
+                                            <div class="size-box">
+                                                <div class="color-chip">
+                                                    <span style="background-color:#e573ae"></span>
+                                                    <span style="background-color:#c2c2c2"></span>
+                                                    <span style="background-color:#000000"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail-info transition-normal">
+                                            <div class="title">여성 세미크랍 아치레터링 맨투맨</div>
+                                            <div class="price clear">
+                                                <div class="pull-left">
+                                                    <del>85,000</del>
+                                                    <strong>59,500</strong>
+                                                    <span class="discount">30%</span>
+                                                </div>
+                                            </div>
+                                            <div class="icons"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="btn_more_wrap" id="bestlength"><a href="javascript:" class="btn-more" title="더보기">더보기</a></div>
+                    </div>
+                </div>
+                <div class="line_banner1">
+                    <div class="banner_img1 trans-x">
+                        <a href="javascript:"></a>
+                    </div>
+                </div>
+                <div class="guess_pick_area">
+                    <h2 class="main_title">GUESS PICKS</h2>
+                    <div class="pick_list_wrp">
+                        <dl class="pick_list  pick_list1">
+                            <dt>
+                                <a href="#">
+                                    <img src="./guess_img/15.jpg" alt="OUTER">
+                                    <div class="txt">
+                                        <strong>OUTER</strong>
+                                        <span class="link">SHOP</span>
+                                    </div>
+                                </a>
+                            </dt>
+                            <dd class="fifth_none">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="./guess_img/22.jpg" alt="JACKET" class="already">
+                                            <img src="./guess_img/22-1.jpg" alt="JACKET" class="ready">
+                                            <div class="size-box">
+                                                <div class="color-chip">
+                                                    <span style="background-color:#000000"></span>
+                                                    <span style="background-color:#ffef00"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail-info transition-normal">
+                                            <div class="title">여성 트위드 자켓</div>
+                                            <div class="price clear">
+                                                <div class="pull-left">
+                                                    <del>328,000</del>
+                                                    <strong>295,200</strong>
+                                                    <span class="discount">10%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </dd>
+                            <dd class="fifth_none">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="./guess_img/30.jpg" alt="PADDING" class="already">
+                                            <img src="./guess_img/30-1.jpg" alt="PADDING" class="ready">
+                                            <div class="size-box">
+                                                <div class="color-chip">
+                                                    <span style="background-color:#464646"></span>
+                                                    <span style="background-color:#517a55"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail-info transition-normal">
+                                            <div class="title">남녀공용 후드 클린 롱다운점퍼</div>
+                                            <div class="price clear">
+                                                <div class="pull-left">
+                                                    <del>358,000</del>
+                                                    <strong>250,600</strong>
+                                                    <span class="discount">30%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </dd>
+                            <dd class="fourth_none">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="./guess_img/31.jpg" alt="PADDING" class="already">
+                                            <img src="./guess_img/31-1.jpg" alt="PADDING" class="ready">
+                                            <div class="size-box">
+                                                <div class="color-chip">
+                                                    <span style="background-color:#000000"></span>
+                                                    <span style="background-color:#ffffff"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail-info transition-normal">
+                                            <div class="title">남녀공용 다이아 퀼팅 스탠넥 롱 점퍼</div>
+                                            <div class="price clear">
+                                                <div class="pull-left">
+                                                    <del>198,000</del>
+                                                    <strong>149,000</strong>
+                                                    <span class="discount">24%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </dd>
+                            <dd class="third_none">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="./guess_img/32.jpg" alt="JACKET" class="already">
+                                            <img src="./guess_img/32-1.jpg" alt="JACKET" class="ready">
+                                            <div class="size-box">
+                                                <div class="color-chip">
+                                                    <span style="background-color:#234911"></span>
+                                                    <span style="background-color:#011c70"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail-info transition-normal">
+                                            <div class="title">남성 울믹스 패딩 봄버</div>
+                                            <div class="price clear">
+                                                <div class="pull-left">
+                                                    <del>278,000</del>
+                                                    <strong>194,600</strong>
+                                                    <span class="discount">30%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </dd>
+                            <dd class="second_none">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <div class="image">
+                                            <img class="already" src="./guess_img/10.jpg" alt="PADDING">
+                                            <img class="ready" src="./guess_img/10-1.jpg" alt="PADDING">
+                                            <div class="size-box">
+                                                <div class="color-chip">
+                                                    <span style="background-color: #000"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail-info transition-normal">
+                                            <div class="title">여성 에코레더 숏 푸퍼 다운</div>
+                                            <div class="price clear">
+                                                <div class="pull-left">
+                                                    <del>238,000</del>
+                                                    <strong>166,600</strong>
+                                                    <span class="discount">30%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </dd>
+                            <dd  class="first_none">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="./guess_img/14.jpg" alt="PADDING" class="already">
+                                            <img src="./guess_img/14-1.jpg" alt="PADDING" class="ready">
+                                            <div class="size-box">
+                                                <div class="color-chip">
+                                                    <span style="background-color:#fdfbdc"></span>
+                                                    <span style="background-color:#000000"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail-info transition-normal">
+                                            <div class="title">여성 바디컨시어스 벨티드 숏 구스</div>
+                                            <div class="price clear">
+                                                <div class="pull-left">
+                                                    <del>278,000</del>
+                                                    <strong>250,200</strong>
+                                                    <span class="discount">10%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="pick_list pick_list2">
+                            <dt>
+                                <a href="#">
+                                    <img src="./guess_img/29.jpg" alt="HAT">
+                                    <div class="txt">
+                                        <strong>HAT</strong>
+                                        <span class="link">SHOP</span>
+                                    </div>
+                                </a>
+                            </dt>
+                            <dd class="fifth_none">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="./guess_img/33.jpg" alt="HAT" class="already">
+                                            <img src="./guess_img/33-1.jpg" alt="HAT" class="ready">
+                                            <div class="size-box">
+                                                <div class="color-chip">
+                                                    <span style="background-color:#fdfbdc"></span>
+                                                    <span style="background-color:#000000"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail-info transition-normal">
+                                            <div class="title">여성 삼각로고 에코퍼 버킷햇</div>
+                                            <div class="price clear">
+                                                <div class="pull-left">
+                                                    <del>68,000</del>
+                                                    <strong>47,600</strong>
+                                                    <span class="discount">30%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </dd>
+                            <dd class="fifth_none">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="./guess_img/34.jpg" alt="HAT" class="already">
+                                            <img src="./guess_img/34-1.jpg" alt="HAT" class="ready">
+                                            <div class="size-box">
+                                                <div class="color-chip">
+                                                    <span style="background-color:#000000"></span>
+                                                    <span style="background-color:#e9d38d"></span>
+                                                    <span style="background-color:#FAAFBA"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail-info transition-normal">
+                                            <div class="title">여성 삼각 메탈로고 베레모</div>
+                                            <div class="price clear">
+                                                <div class="pull-left">
+                                                    <del>48,000</del>
+                                                    <strong>33,600</strong>
+                                                    <span class="discount">30%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </dd>
+                            <dd class="fourth_none">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="./guess_img/35.jpg" alt="HAT" class="already">
+                                            <img src="./guess_img/35-1.jpg" alt="HAT" class="ready">
+                                            <div class="size-box">
+                                                <div class="color-chip">
+                                                    <span style="background-color:#e9d38d"></span>
+                                                    <span style="background-color:#fdfbdc"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail-info transition-normal">
+                                            <div class="title">남녀공용 뽀글이 볼캡</div>
+                                            <div class="price clear">
+                                                <div class="pull-left">
+                                                    <del>68,000</del>
+                                                    <strong>47,600</strong>
+                                                    <span class="discount">30%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </dd>
+                            <dd class="third_none">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="./guess_img/36.jpg" alt="HAT" class="already">
+                                            <img src="./guess_img/36-1.jpg" alt="HAT" class="ready">
+                                            <div class="size-box">
+                                                <div class="color-chip">
+                                                    <span style="background-color:#0550fd"></span>
+                                                    <span style="background-color:#e9d38d"></span>
+                                                    <span style="background-color:#CFCECA"></span>
+                                                    <span style="background-color:#FAAFBA"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail-info transition-normal">
+                                            <div class="title">여성 바라클라바</div>
+                                            <div class="price clear">
+                                                <div class="pull-left">
+                                                    <del>68,000</del>
+                                                    <strong>47,600</strong>
+                                                    <span class="discount">30%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </dd>
+                            <dd  class="second_none">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="./guess_img/37.jpg" alt="HAT" class="already">
+                                            <img src="./guess_img/37-1.jpg" alt="HAT" class="ready">
+                                            <div class="size-box">
+                                                <div class="color-chip">
+                                                    <span style="background-color:#fc7c01"></span>
+                                                    <span style="background-color:#009e25"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail-info transition-normal">
+                                            <div class="title">남녀공용 GO 코듀로이 버킷햇</div>
+                                            <div class="price clear">
+                                                <div class="pull-left">
+                                                    <del>58,000</del>
+                                                    <strong>40,600</strong>
+                                                    <span class="discount">30%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </dd>
+                            <dd class="first_none">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="./guess_img/38.jpg" alt="HAT" class="already">
+                                            <img src="./guess_img/38-1.jpg" alt="HAT" class="ready">
+                                            <div class="size-box">
+                                                <div class="color-chip">
+                                                    <span style="background-color:#000000"></span>
+                                                    <span style="background-color:#e9d38d"></span>
+                                                    <span style="background-color:#efe29d"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail-info transition-normal">
+                                            <div class="title">남녀공용 GUESS 자수 비니</div>
+                                            <div class="price clear">
+                                                <div class="pull-left">
+                                                    <del>38,000</del>
+                                                    <strong>26,600</strong>
+                                                    <span class="discount">30%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="ft_notice">
+                    <div class="inner_align">
+                        <h2>공지사항</h2>
+                        <p class="subject"><a href="javascript:">2023년 1월 카드사 무이자 혜택</a></p>
+                        <a href="javascript:" class="btn_more">+ MORE</a>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer id="footer">
+            <div class="inner_align">
+                <div class="ft_info">
+                    <ul class="ft_menu">
+                        <li>
+                            <a href="javascript:">회사소개</a>
+                        </li>
+                        <li>
+                            <a href="javascript:">매장안내</a>
+                        </li>
+                        <li>
+                            <a href="javascript:">개인정보처리방침</a>
+                        </li>
+                        <li>
+                            <a href="javascript:">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="javascript:">고객센터</a>
+                        </li>
+                    </ul>
+                    <div class="link">
+                        <a href="javascript:"><i class="icon-sns-insta">인스타</i></a>
+                        <a href="javascript:"><i class="icon-sns-facebook-grey">페이스북</i></a>
+                        <a href="javascript:"><i class="icon-sns-blog-grey">블로그</i></a>
+                    </div>
+                    <a href="javascript:" class="gueesfam" title="GUESS FAMILY 이동">GUESS FAMILY</a>
+                    <div class="company_info">
+                        <p>
+                            <span>게스홀딩스코리아유한회사</span>
+                            <span>서울특별시 강남구 테헤란로 534 글라스타워28층</span>
+                            <span>대표이사: 제임스윤영박</span>
+                        </p>
+                        <p>
+                            <span>사업자 등록번호: 211-87-83034</span>
+                            <span>통신판매업 신고: 2013-서울강남-01681</span>
+                        </p>
+                        <p>
+                            <a href="javascript:">사업자정보확인</a>
+                            <a href="javascript:">에스크로 서비스 가입 확인</a>
+                        </p>
+                    </div>
+                    <div class="company_info">
+                        <p>
+                            <span class="text-tone-c">
+                                쇼핑몰 관련문의: 
+                                <strong>1544-7665</strong>
+                            </span>
+                            &nbsp;(주문,배송문의)&nbsp; AM 10:00 ~ PM 5:00
+                            <span> 대표메일주소 : guessmall@guesskorea.com</span>
+                        </p>
+                        <p>
+                            <span>게스코리아 대표번호: 080-001-2220&nbsp; AM 10:00 ~ PM 5:00</span>
+                            <span>카카오톡 상담: @게스코리아 (A/S문의만가능)</span>
+                        </p>
+                    </div>
+                    <p class="copyright">COPYRIGHT (c) GUESSKOREA. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+            <div id="btn_top">
+                <a href="javascript:;"><i class="icon-gotop">맨위로</i></a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            rewind: true,
+            navigation: {
+                nextEl: ".slick-next",
+                prevEl: ".slick-prev",
+            },
+            autoplay: {     //자동슬라이드 (false-비활성화)
+            delay: 2500, // 시간 설정
+            disableOnInteraction: false, // false-스와이프 후 자동 재생
+            },
+            loop : false,   // 슬라이드 반복 여부
+        });
+
+        $(function(){
+      $('.slider-div').slick({
+        slide: 'div',   //슬라이드 되어야 할 div  
+        infinite : true,  //무한 반복 옵션   
+        slidesToShow : 6,   // 한 화면에 보여질 컨텐츠 개수
+        slidesToScroll : 1,   //스크롤 한번에 움직일 컨텐츠 개수
+        speed : 700,   // 다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
+        arrows : true,    // 옆으로 이동하는 화살표 표시 여부
+        dots : false,    // 스크롤바 아래 점으로 페이지네이션 여부
+        autoplay : true,      // 자동 스크롤 사용 여부
+        autoplaySpeed : 2000,    // 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
+        pauseOnHover : true,    // 슬라이드 이동 시 마우스 호버하면 슬라이더 멈추게 설정
+        vertical : false,   // 세로 방향 슬라이드 옵션
+        prevArrow : ".slide-prev",    // 이전 화살표 모양 설정
+        nextArrow : ".slide-next",    // 다음 화살표 모양 설정
+        draggable : true,   //드래그 가능 여부 
+        centerMode: false,  //센터모드 (active된 요소가 화면 가운데로,slidesToShow 갯수가 짝수 일 경우 아이템의 경계선이 가운데로 옴)
+        responsive: [ // 반응형 웹 구현 옵션
+          {  
+            breakpoint: 1820, //화면 사이즈 960px
+            settings: {
+              //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+              slidesToShow:5
+            } 
+          },
+          { 
+            breakpoint: 1570, //화면 사이즈 768px
+            settings: { 
+              //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+              slidesToShow:4
+            } 
+          },
+          { 
+            breakpoint: 1300, //화면 사이즈 768px
+            settings: { 
+              //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+              slidesToShow:3
+            } 
+          },
+          { 
+            breakpoint: 1020, //화면 사이즈 768px
+            settings: { 
+              //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+              slidesToShow:2
+            } 
+          },
+          { 
+            breakpoint: 770, //화면 사이즈 768px
+            settings: { 
+              //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+              slidesToShow:1
+            } 
+          }
+        ]
+
+      });
+      })
+      </script>
+</body>
+</html>

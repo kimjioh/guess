@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+@media screen and (max-width: 1820px) {
+    #content main .new_arrivals_area .responsive_slider .main_top_slider .slide{width: 1500px;}
+}
+
+@media screen and (max-width: 1700px) {
+    .first_none{display: none;}
+    #content main .guess_pick_area .pick_list_wrp{width: 1439px;}
+}
+
+@media screen and (max-width: 1570px) {
+    #content main .new_arrivals_area .responsive_slider .main_top_slider .slide{width: 1200px;}
+}
+
+@media screen and (max-width: 1500px) {
+    #content main .guess_pick_area .pick_list_wrp{width: 1200px;}
+    #content main .guess_pick_area .pick_list_wrp .pick_list dd.second_none{display: none;}
+}
+
+@media screen and (max-width: 1450px) {
+    #header .header_wrap #gnb .gnb_menu .none_block{display: none;}
+    #header{background: rgba(255,255,255); padding-right: 0;}
+    #header .header_wrap .logo{width: 80px; padding-top: 15px;}
+    #header .header_wrap .logo img{width: 100%; height: 100%;}
+    #header .header_wrap #gnb .gnb_menu li a{padding-top: 36px;}
+    #header .header_wrap .util_menu li a{padding-top: 34px;}
+    #content main .visual .slider .mySwiper .swiper-wrapper .swiper-slide img{margin-top: 90px;}
+}
+
+@media screen and (max-width: 1300px) {
+    #content main .new_arrivals_area .responsive_slider .main_top_slider .slide{width: 900px;}
+}
+
+@media screen and (max-width: 1230px) {
+    #content main .promotion{border-bottom: 1px solid #d3d3d3; height: 1180px;}
+    #content main .new_arrivals_area{border-bottom: 1px solid #d3d3d3;}
+    #content main .promotion .inner_align{width: 100%; margin: 0;}
+    #content main .promotion .inner_align .list{margin: 0 auto; width: 590px;}
+    #content main .promotion .inner_align .list li{width: 100%;}
+    #content main .promotion .inner_align .list li{margin-bottom: 130px;}
+    #content main .promotion .inner_align .list li:first-child{margin-right: 0;}
+    #content main .best_selling_area{margin-top: 90px;}
+    #content main .line_banner{display: none;}
+    #content main .line_banner1{display: none;}
+    #content main .best_selling_area .inner_align{width: 957px;}
+    #content main .best_selling_area .goods-list li.margin_first{margin-top: 70px; margin-left: 0;}
+    #content main .best_selling_area .goods-list li.margin_left{margin-left: 17.5px;}
+    #content main .best_selling_area .goods-list li.left_margin{margin-left: 0;}
+    #content main .guess_pick_area .pick_list_wrp{width: 957px;}
+    #content main .guess_pick_area .pick_list_wrp .pick_list dd.third_none{display: none;}
+    #content main .guess_pick_area .pick_list_wrp .pick_list dd{margin-left: 16px;}
+    #content main .guess_pick_area .pick_list_wrp .pick_list2 dd{margin-right:16px; margin-left: 0}
+    #content main .ft_notice .inner_align{width: 95%;}
+    footer{width: 100%;}
+    footer .inner_align{width: 95%;}
+}
+
+
+@media screen and (max-width: 1040px) {
+    #header .header_wrap #gnb, #header .header_wrap .util_menu{display: none;}
+    #header .curation .menu{display: none;}
+    #header .header_wrap #mobile .mobile_menu i{display: block; padding-right: 20px;}
+    #content main .visual .view_more{display: none;}
+    #content main .visual .slider a.slick-prev{display: none;}
+    #content main .visual .slider a.slick-next{display: none;}
+    #content main .best_selling_area .inner_align{width: 713px;}
+    #content main .best_selling_area .goods-list li.margin_second{margin-left: 0;}
+    #content main .best_selling_area .goods-list li.margin_second_top{margin-top: 70px;}
+    #content main .best_selling_area .goods-list li.margin_second_left{margin-left: 17.5px;}
+    #content main .guess_pick_area .pick_list_wrp{width: 713px;}
+    #content main .guess_pick_area .pick_list_wrp .pick_list dd{margin-left: 12px;}
+    #content main .guess_pick_area .pick_list_wrp .pick_list2 dd{margin-left: 0; margin-right: 12px;}
+    #content main .guess_pick_area .pick_list_wrp .pick_list dd.fourth_none{display: none;}
+    #footer{padding: 40px 0 135px;}
+    #footer .inner_align .ft_info .gueesfam{display: none;}
+}
+
+
+@media screen and (max-width: 1020px) {
+    #content main .new_arrivals_area .responsive_slider .main_top_slider .slide{width: 600px;}
+    #footer .inner_align .ft_info::after{content: ""; width: 100%; height: 2px; background: #888; position: absolute; bottom: -25px;}
+    #footer .inner_align .ft_info .link{top: 126%; right: 50%; transform: translateX(50%);}
+    #footer .inner_align .ft_info .link{width: 186px;}
+} 
+
+
+
+@media screen and (max-width: 770px) {
+    #content main .new_arrivals_area .responsive_slider .main_top_slider .slide{width: 300px;}
+    #content main .guess_pick_area .pick_list_wrp{width: 510px;}
+    #content main .guess_pick_area .pick_list_wrp .pick_list{width: 50%;}
+    #content main .guess_pick_area .pick_list_wrp .pick_list dt a .txt strong, #content main .guess_pick_area .pick_list_wrp .pick_list dt a .txt .link{text-align: right;}
+    #content main .guess_pick_area .pick_list_wrp .pick_list2 dt .link::before{display: none;}
+    #content main .guess_pick_area .pick_list_wrp .pick_list2 .link::after{background: url(../guess_img/icon_visual_darr.png) no-repeat center center; display: inline-block; width: 5px; height: 17px; margin-left: 6px; content: ""; position: absolute; transform: rotate(-90deg);}
+    #content main .guess_pick_area .pick_list_wrp .pick_list dd.fifth_none{display: none;}
+    #content main .best_selling_area{display: none;}
+    #content main .guess_pick_area{margin-top: 0;}
+    #content main .promotion{border-bottom:none}
+}
+
+@media screen and (max-width: 700px) {
+    #footer .inner_align .ft_info .company_info p span{display: block;}
+    #footer .inner_align .ft_info .link{top: 118%; right: 50%; transform: translateX(50%);}
+    #footer .inner_align .ft_info .ft_menu li a{font-size: 12px;}
+    #footer .inner_align .ft_info .ft_menu li{margin-right: 9px;}
+    #footer .inner_align .ft_info .company_info p span::before{content: ""; margin: 0;}
+    #content main .ft_notice .inner_align h2::after{margin: 0 15px;}
+}
+
+@media screen and (max-width: 660px) {
+    #content main .promotion .inner_align .list{width: 90%;}
+    #content main .promotion .inner_align .list li .item a .img img{width: 100%;}
+    #content main .promotion .inner_align .list li .item a .txt .subject{font-size: 14px; transition: .1s ease-in-out;}
+    #content main .promotion .inner_align .list li .item a .txt{bottom: -24%; padding: 4% 0 3%;}
+    #content main .promotion{height: 100%; padding-bottom:10%}
+}
+
+@media screen and (max-width: 600px) {
+    #content main .guess_pick_area{height: 1110px;}
+    #content main .guess_pick_area .pick_list_wrp{display: block; width: 90%; height: 100%;}
+    #content main .guess_pick_area .pick_list_wrp .pick_list{width: 100%;}
+    #content main .guess_pick_area .pick_list_wrp .pick_list dt{margin-left: 50%; transform: translateX(-50%);}
+    #content main .guess_pick_area .pick_list_wrp .pick_list2 dt{float: left;}
+}
